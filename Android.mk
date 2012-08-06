@@ -17,10 +17,10 @@ LOCAL_C_INCLUDES += external/zlib
 LOCAL_SHARED_LIBRARIES := \
 	libutils \
 	libcutils \
-        libz
+    libz
 
 LOCAL_C_INCLUDES := \
-        external/zlib
+	external/zlib
 
 ifeq ($(HOST_OS),linux)
 LOCAL_LDLIBS += -lrt
@@ -30,4 +30,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := armzipalign
 
 include $(BUILD_EXECUTABLE)
-
